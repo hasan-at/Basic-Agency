@@ -1,0 +1,256 @@
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+.hade {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% 5%;
+  background-color: #252422;
+}
+
+.logo {
+  width: 7%;
+}
+.menue {
+  width: 3%;
+}
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #f9cdcd;
+  display: block;
+  transition: 0.3s;
+}
+
+/* .overlay a:hover,
+    .overlay a:focus {
+      color: #f1f1f1;
+    } */
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto;
+  }
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* ---------------- */
+.hade ul {
+  display: flex;
+  list-style: none;
+}
+.hade ul a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #f9cdcd93;
+}
+.hade nav li {
+  padding: 0 3rem;
+}
+.hade nav a:hover,
+.hade nav a:focus {
+  color: #f9cdcd;
+}
+
+.menu-x img {
+  width: 350px;
+}
+.hade article img:hover,
+.hade article img:focus {
+  width: 200px;
+}
+.menu-x h4 {
+  color: #f9cdcd;
+  text-align: start;
+  padding-left: 7%;
+  padding-top: 10%;
+}
+
+.menu-x article ul {
+  display: grid;
+  grid-template-columns: 45% 45% 45% 45% 45%;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+}
+.menu-x ul > li {
+  list-style: none;
+  border-left: 1px solid #f9cdcd;
+  margin-left: 30%;
+}
+
+.menu-x h5 {
+  font-size: 1.5em;
+  margin: 3% 0;
+  color: #f9cdcd;
+  padding-top: 4%;
+}
+.card-one {
+  padding: 59.4px 80px 25px;
+  background-color: #252422;
+  color: #f9cdcd;
+}
+.elemnt1 {
+  margin-bottom: 10%;
+}
+.span-what {
+  font-size: 90px;
+  line-height: 80px;
+  text-transform: uppercase;
+}
+.span-bunkt {
+  font-size: 1.5em;
+  display: inline-block;
+  margin-left: 70%;
+}
+.list-thinking-filter__details {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 10%;
+  color: #f9cdcd;
+}
+.list-thinking-filter__details div {
+  width: 30%;
+  margin-left: 5%;
+}
+.list-thinking-filter__details p:nth-child(1) {
+  font-size: 1.9em;
+  margin-bottom: 2%;
+}
+.list-thinking-filter__details p:nth-child(2) {
+  font-size: 1.2em;
+}
+.teitel-tow {
+  color: #f9cdcd;
+  position: relative;
+}
+.teitel-tow div {
+  display: flex;
+  border-top: 1px solid #f9cdcd;
+  padding-top: 3%;
+  margin-top: 1%;
+  padding-bottom: 5%;
+  position: relative;
+}
+.teitel-tow img {
+  width: 30%;
+}
+.teitel-tow article {
+  margin-left: 2%;
+}
+.teitel-tow h2 {
+  line-height: 40px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 2em;
+  color: #f9cdcd;
+}
+.teitel-tow p {
+  margin-top: 60%;
+}
+.teitel-tow img:nth-child(3) {
+  width: 3%;
+  position: absolute;
+  right: 1%;
+  top: 5%;
+}
+.card-thri {
+  background-color: #fff;
+  padding: 5% 0;
+}
+.teitel-thri {
+  margin-left: 5%;
+  padding-bottom: 3%;
+}
+.teitel-thri,
+a,
+ul {
+  color: #252422;
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+}
+.teitel-thri article:nth-child(1) {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  font-size: 1.9em;
+}
+.card-thri > footer > article > div:nth-child(2) > p {
+  margin-left: 10%;
+}
+.card-thri > footer > article > div:nth-child(2) > p a {
+  text-decoration-line: underline;
+  font-size: 1em;
+}
+.teitel-thri img {
+  width: 20%;
+}
+.teitel-thri div article:nth-child(2) {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  font-weight: 100;
+  gap: 5%;
+  margin-top: 10%;
+  margin-left: 10%;
+  line-height: 30px;
+}
+input[type="email"] {
+  width: 100%;
+  height: 4rem;
+  line-height: 5.5rem;
+  color: currentColor;
+  display: block;
+  border-bottom: 0.1rem solid;
+}
+input {
+  background: transparent;
+  border: 1px solid #fff;
+  font-size: 20px;
+}
+.tag-one {
+  margin-top: 35%;
+}
+
+h6::before {
+  content: "●";
+  margin-right: 0.5em;
+}
